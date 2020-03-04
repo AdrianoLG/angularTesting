@@ -44,7 +44,8 @@ describe('HeroesComponent', () => {
       component.delete(HEROES[2]);
 
       // Checks method is called
-      expect(mockHeroService.deleteHero).toHaveBeenCalled();
+      //expect(mockHeroService.deleteHero).toHaveBeenCalled();
+      expect(mockHeroService.deleteHero).toHaveBeenCalledWith(HEROES[2]);
     })
   })
 });
